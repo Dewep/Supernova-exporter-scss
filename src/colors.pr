@@ -7,7 +7,7 @@ and their value rendered using `rendered-color` blueprint
 *}
 {[ let brand = ds.currentBrand() /]}
 {[ for token in ds.tokensByType("Color", brand.id) ]}
-{{ token }}
+{{ JSON.stringify(token) }}
 {[ inject "rendered-token-var" context token /]}
     
 
