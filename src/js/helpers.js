@@ -7,4 +7,7 @@ Pulsar.registerFunction("debugkeys", function (data) {
 	console.log(Object.keys(data[0]))
 	return JSON.stringify(data)
 });
+Pulsar.registerFunction("debugtheme", function (data) {
+	return (data || []).map(d => d.value).join(',')
+});
 }]);
