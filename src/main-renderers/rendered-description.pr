@@ -25,8 +25,8 @@ Rendered as:
 {[ let theme = ds.themeById(themeId) /]}
 /*
 {{ debugjson(context) }}
-{{ debugjson2(theme) }}
-{{ debugjson2(themedToken) }}
+{{ debugkeys(theme) }}
+{{ debugkeys(themedToken) }}
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
 {[/]}

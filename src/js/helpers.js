@@ -3,7 +3,7 @@ Pulsar.registerFunction("debugjson", function (data) {
 	// id,versionedId,brandId,themeId,designSystemVersionId,name,description,tokenType,origin,parent,createdAt,updatedAt,sortOrder,properties,propertyValues,value
 	return JSON.stringify(data.properties) + "\n" + JSON.stringify(data.propertyValues)
 });
-Pulsar.registerFunction("debugjson2", function (data) {
+Pulsar.registerFunction("debugkeys", function (data) {
 	console.log(Object.keys(data))
 	return JSON.stringify(data)
 });
