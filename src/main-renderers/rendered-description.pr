@@ -25,7 +25,7 @@ Rendered as:
 {[ let theme = ds.themeById(themeId) /]}
 /*
 {{ debugjson(context) }}
-{{ debugkeys(theme) }}
+{* debugkeys(theme) id,versionedId,brandId,designSystemVersionId,name,description,codeName,createdAt,updatedAt,overriddenTokens *}
 {{ debugkeys(themedToken) }}
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
