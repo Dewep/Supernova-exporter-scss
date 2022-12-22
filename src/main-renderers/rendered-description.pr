@@ -19,7 +19,10 @@ Note: Token is passed as `context` property because it is injected
 Rendered as:
 
 /* description */
-*}
+ *}
+/*
+{{ json(context) }}
+ */
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
 {[/]}
