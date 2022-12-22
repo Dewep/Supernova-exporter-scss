@@ -2,6 +2,7 @@
 Pulsar.registerFunction("debugjson", function (data) {
 	console.log(data)
 	console.log(JSON.stringify({toto:3}))
+	console.log(Object.keys(data))
 	console.log(JSON.stringify(data))
   return JSON.stringify(data)
 })
