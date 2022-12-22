@@ -8,6 +8,9 @@ Pulsar.registerFunction("debugkeys", function (data) {
 	return JSON.stringify(data)
 });
 Pulsar.registerFunction("debugtheme", function (data) {
-	return (data || []).map(d => d.value).join(',')
+	return (data || []).map(d => {
+		console.log(Object.keys(d))
+		return JSON.stringify(d.value)
+	}).join(' /// ')
 });
 }]);
