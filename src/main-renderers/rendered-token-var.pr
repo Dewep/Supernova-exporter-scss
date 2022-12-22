@@ -25,13 +25,9 @@ Rendered as:
 {[ let token = context /]}
 {[ inject "rendered-description" context token /]}
 ${[ inject "rendered-name" context token /]}: {[ inject "rendered-value" context token /]};
-
 {[ if (token.tokenType == "Color") ]}
 {[ let themeId = "a78c211e-c104-43c2-98dc-7216a8624f0f" /]}
 {[ let themedToken = ds.tokensByApplyingThemes([context.id], [themeId]) /]}
 {[ let theme = ds.themeById(themeId) /]}
-${[ inject "rendered-name" context token /]}{{ theme.name }}{{ theme.codeName }}: {[ inject "rendered-value" context themedToken[0] /]};
+${[ inject "rendered-name" context token /]}{{ theme.codeName }}: {[ inject "rendered-value" context themedToken[0] /]};
 {[/]}
-{* debugkeys(theme) id,versionedId,brandId,designSystemVersionId,name,description,codeName,createdAt,updatedAt,overriddenTokens *}
-{* themedToken: id,versionedId,brandId,themeId,designSystemVersionId,name,description,tokenType,origin,parent,createdAt,updatedAt,sortOrder,properties,propertyValues,value,shadowLayers,isVirtual *}
-
