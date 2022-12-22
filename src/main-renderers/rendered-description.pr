@@ -20,8 +20,12 @@ Rendered as:
 
 /* description */
  *}
+{[ let themeId = "a78c211e-c104-43c2-98dc-7216a8624f0f" /]}
+{[ let themedToken = ds.tokensByApplyingThemes([context.id], [themeId]) /]}
+{[ let theme = ds.themeById(themeId) /]}
 /*
 {{ debugjson(context) }}
+{{ debugjson2(theme) }}
  */
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
