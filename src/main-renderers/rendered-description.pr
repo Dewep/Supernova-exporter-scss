@@ -21,7 +21,7 @@ Rendered as:
 /* description */
  *}
 /*
-{{ json(context) }}
+{{ debugjson(context) }}
  */
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
