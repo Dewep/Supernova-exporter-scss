@@ -27,7 +27,7 @@ Rendered as:
 {{ debugjson(context) }}
 {* debugkeys(theme) id,versionedId,brandId,designSystemVersionId,name,description,codeName,createdAt,updatedAt,overriddenTokens *}
 {* themedToken: id,versionedId,brandId,themeId,designSystemVersionId,name,description,tokenType,origin,parent,createdAt,updatedAt,sortOrder,properties,propertyValues,value,shadowLayers,isVirtual *}
-{{ debugjson(themedToken) }}
+{{ debugjson(themedToken[0]) }}
 {[ if (context.description && context.description.count() > 0) ]}
 /* {{ context.description.replacing("*/", "* /") }} */
 {[/]}
