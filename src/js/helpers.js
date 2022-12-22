@@ -4,7 +4,7 @@ Pulsar.registerFunction("debugjson", function (data) {
 	return JSON.stringify(data.properties) + "\n" + JSON.stringify(data.propertyValues)
 });
 Pulsar.registerFunction("debugkeys", function (data) {
-	console.log(Object.keys(data))
+	console.log(Object.keys(data[0]))
 	return JSON.stringify(data)
 });
 }]);
